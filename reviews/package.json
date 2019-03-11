@@ -1,0 +1,54 @@
+{
+  "name": "component-reviews-sp",
+  "version": "1.0.0",
+  "description": "Component for reviews",
+  "main": "view/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node view/index.js",
+    "new:start": "npm run seed && npm start",
+    "build": "webpack",
+    "seed": "node models/reviews.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite-grub/component-reviews-sp.git"
+  },
+  "author": "sparksparker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elite-grub/component-reviews-sp/issues"
+  },
+  "homepage": "https://github.com/elite-grub/component-reviews-sp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "es6-promise": "^4.2.6",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.15",
+    "pg": "^7.8.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "vivid-icons": "^1.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "jest": "^24.1.0",
+    "jsdom": "13.2.0",
+    "jsdom-global": "3.0.2",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  reviews:
+    build: ./reviews
+    depends_on:
+      - 'database'
+    ports:
+      - '3010:3010'
+
+  database:
+    image: mongo:latest

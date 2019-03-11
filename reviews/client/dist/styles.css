@@ -1,0 +1,572 @@
+body {
+  /* padding-left: 24.5%; */
+  /* width: 660px; */
+  resize: horizontal;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bodyContainer {
+  padding-left: 24.5%;
+  float: left;
+  /* border-color: black; */
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  /* margin-right: 30px; */
+  width: 660px;
+}
+
+.headerContainer {
+  /* border: solid 1px black; */
+}
+
+.headerTextContainer {
+  margin-bottom: 6px;
+}
+
+.recommendedReviews {
+  float: left;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 16pt;
+  font-weight: 700;
+  /* line-height: 27px; */
+  /* font-weight: bold; */
+  color: #d32323;
+  padding-right: 5px;
+}
+
+.forCurrentRestaurant {
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+.searchAndSortContainer {
+  display: flex;
+}
+
+.searchBarContainer {
+  display: flex;
+}
+
+.searchBar {
+  width: 232px;
+  height: 25px;
+  font-size: 11pt;
+  font-weight: 450;
+  color: #838383;
+}
+
+.searchButton {
+  width: 37px;
+  height: 31px;
+}
+
+.sortAndLanguageContainer {
+  padding-top: 4px;
+}
+
+.sortContainer {
+  display: flex;
+  float: left;
+  padding-left: 25px;
+}
+
+.sortDropDown {
+  width: 120px;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.languageContainer {
+  display: flex;
+  float: right;
+  padding-left: 22px;
+}
+
+.languageDropDown {
+  width: 163px;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.belowHeaderLine {
+  border-color: #e6e6e6db;
+  border-width: 0.5px;
+}
+
+.allReviewsContainer {
+  padding-left: 0px;
+}
+
+.emptyDefaultContainer {
+  padding-left: 0px;
+  padding-bottom: 8px;
+  list-style-type: none;
+  /* width: 247.13px; */
+}
+
+.emptyAvatarContainer {
+  display: flex;
+  padding-right: 3px;
+}
+
+.emptyProfile {
+  width: 217.13px;
+  height: 68px;
+  padding-right: 30px;
+}
+
+.emptyProfileImg {
+  width: 148px;
+  height: 68px;
+}
+
+.emptyStartReviewContainer {
+  /* border: 1px black solid; */
+  /* width: 350px; */
+  background-color: #f5f5f5;
+  border: 1px solid #e6e6e6;
+  padding: 11px;
+  border-radius: 4px;
+  width: 381.88px;
+  height: 76px;
+}
+
+.emptyStars {
+  width: 162px;
+  height: 30px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.belowEmptyProfileLine {
+  border-color: #00000015;
+  border-width: 0.5px;
+}
+
+.startReviews {
+  padding-top: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 11pt;
+  color: #0073bb;
+}
+
+.horizontalDivider {
+  border-color: #e6e6e6db;
+  border-width: 0.5px;
+}
+
+.eachReviewLinkedList {
+  /* padding-left: 3px; */
+  /* padding-top: 10px; */
+  list-style-type: none;
+}
+
+.eachReviewContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  /* width: 655px; */
+}
+
+.reviewSidebarContentContainer {
+
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding-right: 55px; */
+  width: 247.13px;
+}
+
+.avatarContainer {
+
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.detailsContainer {
+  padding-left: 10px;
+}
+
+.userInfoContainer {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.userName {
+  font-size: 11pt;
+  font-weight: 700;
+  text-decoration-line: none;
+  color: #0073bb;
+}
+
+.locationInfo {
+  list-style-type: none;
+  font-size: 9.5pt;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.userStatsContainer {
+  padding-left: 0px;
+  margin-top: 4px;
+  list-style-type: none;
+  color: #666;
+}
+
+.friendCount {
+  font-size: 12px;
+  font-stretch: expanded;
+  padding-bottom: 4px;
+}
+
+.friendsIcon {
+  width: 15px;
+  /* height: 12px; */
+}
+
+.numberOfFriends {
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 2px;
+}
+
+.reviewCount {
+  font-size: 12px;
+  font-stretch: expanded;
+  padding-bottom: 4px;
+}
+
+.reviewsIcon {
+  width: 12px;
+  padding-left: 1px;
+  /* height: 15px; */
+}
+
+.numberOfReviews {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.photoCount {
+  font-size: 12px;
+  font-stretch: expanded;
+}
+
+.cameraIcon {
+  width: 15px;
+  /* padding-left: -2px; */
+  /* height: 15px; */
+}
+
+.numberOfPhotos {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.isElite {
+  padding-top: 4px;
+  font-weight: bold;
+  color: #f15c00;
+  font-size: 9.5pt;
+}
+
+.profileLinksContainer {
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 40px;
+  list-style-type: none;
+}
+
+.shareReviewLink {
+
+}
+
+.shareReviewIcon {
+  width: 16px;
+  height: 12px;
+  float: left;
+  margin-right: 10px;
+}
+
+.shareReviewText {
+  font-size: 10pt;
+  color: #0073bb;
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+
+.shareReviewLine {
+  border-color: #dcdcdc;
+  border-width: 0.5px;
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.embedReviewLink {
+  margin-top: -8px;
+}
+
+.embedReviewIcon {
+  width: 18px;
+  height: 12px;
+  float: left;
+  margin-right: 10px;
+  margin-left: -2px;
+}
+
+.embedReviewText {
+  font-size: 10pt;
+  color: #0073bb;
+  font-weight: 900;
+}
+
+.embedReviewLine {
+  border-color: #dcdcdc;
+  border-width: 0.5px;
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.complimentLink {
+  margin-top: -8px;
+  margin-left: 1px;
+}
+
+.complimentIcon {
+  width: 12px;
+  height: 18px;
+  float: left;
+  margin-right: 12px;
+}
+
+.complimentText {
+  font-size: 10pt;
+  color: #0073bb;
+  font-weight: 900;
+}
+
+.complimentLine {
+  border-color: #dcdcdc;
+  border-width: 0.5px;
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.sendMessageLink {
+  margin-top: -8px;
+}
+
+.sendMessageIcon {
+  width: 14px;
+  height: 14px;
+  float: left;
+  margin-right: 11px;
+  margin-left: 1px;
+}
+
+.sendMessageText {
+  font-size: 10pt;
+  color: #0073bb;
+  font-weight: 900;
+}
+
+.sendMessageLine {
+  border-color: #dcdcdc;
+  border-width: 0.5px;
+  margin-left: 25px;
+  margin-top: -8px;
+}
+
+.followUserLink {
+  margin-top: -8px;
+}
+
+.followIcon {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 9px;
+  margin-left: 2px;
+}
+
+.followText {
+  font-size: 10pt;
+  color: #0073bb;
+  font-weight: 900;
+}
+
+.reviewContentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 381.88px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+}
+
+.reviewStarsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewStars {
+  width: 102px;
+  height: 18px;
+  padding-right: 7px;
+}
+
+.reviewDate {
+  font-size: 10.5pt;
+  padding-top: 1px;
+  color: #666;
+}
+
+.userReview {
+  margin-top: 6px;
+  font-size: 11pt;
+  color: #444;
+}
+
+.reviewFooterContainer {
+  padding-top: 2px;
+  margin-bottom: 20px;
+}
+
+.didVoteContainer {
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+
+.didVoteText {
+  font-size: 10pt;
+  color: #666;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: -10px;
+}
+
+.nameAndOthers {
+  color: #0073bb;
+  margin-right: 5px;
+}
+
+.wasThisReviewQuestion {
+  margin-top: 0px;
+  margin-bottom: 6px;
+  font-size: 9.5pt;
+  color: #666;
+}
+
+.votingButtonsContainer{
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  padding-top: 2px;
+  padding-left: 0px;
+  height: 30px;
+}
+
+.votingButtonContainer {
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 91.81px;
+  display: flex;
+}
+
+.usefulIcon {
+  width: 18px;
+  height: 18px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+.voteType {
+  font-size: 9.5pt;
+  color: #666;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.voteCount {
+  font-size: 9.5pt;
+  color: #666;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.funnyIcon {
+  width: 18px;
+  height: 18px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+.coolIcon {
+  width: 18px;
+  height: 18px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+.businessOwnerReplyContainer {
+  /* border: 1px black solid; */
+  /* width: 350px; */
+  background-color: #f5f5f5;
+  border: 1px solid #e6e6e6;
+  padding: 11px;
+  border-radius: 4px;
+  width: 381.88px;
+  /* height: 386px; */
+}
+
+.businessOwnerHeaderContainer {
+  margin-bottom: 10px;
+}
+
+.businessOwnerAvatarContainer {
+
+}
+
+.businessOwnerAvatar {
+
+}
+
+.businessAvatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  float: left;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.businessOwnerHeader {
+  font-size: 10pt;
+  color: #666;
+}
+
+.ownerReviewContainer {
+  font-size: 11pt;
+  color: #444;
+}
+
+.ownerReviewText {
+  margin-top: 3px;
+}
+
+.morePages {
+
+}
