@@ -7,6 +7,7 @@ const sequelize = new Sequelize({
   password: development.password,
   database: 'allreviews',
   dialect: 'postgres',
+  logging: false,
 });
 
 module.exports = {
@@ -118,7 +119,8 @@ module.exports = {
       type: Sequelize.ARRAY(Sequelize.TEXT),
     },
     photo_count: {
-      type: Sequelize.ARRAY(Sequelize.TEXT),
+      type: Sequelize.INTEGER,
+      allowNull: false,
     },
     elite_status: {
       type: Sequelize.BOOLEAN,

@@ -11,7 +11,8 @@
     "start": "node view/index.js",
     "new:start": "npm run seed && npm start",
     "build": "webpack",
-    "seed": "node models/reviews.js"
+    "seed": "node models/reviews.js",
+    "seed-sql": "node models/seed.SQL.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,11 @@
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.11",
     "mongoose": "^5.4.15",
-    "pg": "^7.8.1",
+    "pg": "^7.8.2",
+    "pg-hstore": "^2.3.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "sequelize": "^4.43.0",
     "vivid-icons": "^1.0.9"
   },
   "devDependencies": {
