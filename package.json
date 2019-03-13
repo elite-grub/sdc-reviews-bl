@@ -2,13 +2,13 @@
   "name": "component-reviews-sp",
   "version": "1.0.0",
   "description": "Component for reviews",
-  "main": "view/index.js",
+  "main": "server/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "jest",
-    "start": "node view/index.js",
+    "start": "node server/index.js",
     "new:start": "npm run seed && npm start",
     "build": "webpack",
     "seed": "node models/reviews.js",
