@@ -12,7 +12,8 @@
     "new:start": "npm run seed && npm start",
     "build": "webpack",
     "seed": "node models/reviews.js",
-    "seed-sql": "node models/seed.SQL.js"
+    "seed-sql": "node models/seed.SQL.js",
+    "seed-nosql": "node models/seed.noSQL.js"
   },
   "repository": {
     "type": "git",

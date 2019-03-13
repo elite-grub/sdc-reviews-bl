@@ -9,9 +9,9 @@ const reviewsSchema = new mongoose.Schema({
   language: String,
   review: String,
   votes: {
-    useful: Boolean,
-    funny: Boolean,
-    cool: Boolean,
+    useful: Number,
+    funny: Number,
+    cool: Number,
   },
   photos: [],
   owner_fb: {
@@ -27,7 +27,7 @@ const reviewsSchema = new mongoose.Schema({
     self_pic: String,
     location: String,
     friend_count: Number,
-    review_count: [],
+    review_count: Number,
     photo_count: Number,
     elite_status: Boolean,
   },
