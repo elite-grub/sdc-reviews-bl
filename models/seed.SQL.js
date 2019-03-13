@@ -42,7 +42,7 @@ sequelize.sync({ force: true })
         location: 'hayward',
         friend_count: 3,
         review_count: [],
-        photo_count: [],
+        photo_count: 3,
         elite_status: true,
       }),
       Owner.create({
