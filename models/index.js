@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 const { Reviews } = require('./schema.js');
 const { save } = require('./reviews.js');
-mongoose.connect('mongodb://spark:sparkreviews1@ds163255.mlab.com:63255/reviews');
+
+// mongoose.connect('mongodb://spark:sparkreviews1@ds163255.mlab.com:63255/reviews');
+mongoose.connect('mongodb://localhost:27017/reviews', { useNewUrlParser: true });
+
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error'));

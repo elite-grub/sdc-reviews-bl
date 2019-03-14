@@ -12,7 +12,7 @@ class Reviews extends React.Component {
   }
 
   componentDidMount() {
-    const API_URL = 'http://ec2-54-183-114-6.us-west-1.compute.amazonaws.com/api/reviews/1';
+    const API_URL = '/api/reviews/1';
 
     fetch(API_URL)
       .then(res => res.json())

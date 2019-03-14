@@ -25,7 +25,7 @@ const reviewsSchema = new mongoose.Schema({
     name: String,
     thoughts: String,
   },
-  thoughts: {
+  thoughts: { 
     useful: Number,
     funny: Number,
     cool: Number,

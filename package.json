@@ -2,16 +2,17 @@
   "name": "component-reviews-sp",
   "version": "1.0.0",
   "description": "Component for reviews",
-  "main": "view/index.js",
+  "main": "server/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "jest",
-    "start": "node view/index.js",
+    "start": "node server/index.js",
     "new:start": "npm run seed && npm start",
     "build": "webpack",
-    "seed": "node models/reviews.js"
+    "seed": "node models/reviews.js",
+    "seed-sql": "node models/seed.SQL.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,11 @@
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.11",
     "mongoose": "^5.4.15",
-    "pg": "^7.8.1",
+    "pg": "^7.8.2",
+    "pg-hstore": "^2.3.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "sequelize": "^4.43.0",
     "vivid-icons": "^1.0.9"
   },
   "devDependencies": {
@@ -43,6 +46,11 @@
     "css-loader": "^2.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "jest": "^24.1.0",
     "jsdom": "13.2.0",
     "jsdom-global": "3.0.2",
