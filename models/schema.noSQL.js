@@ -1,38 +1,44 @@
 const mongoose = require('mongoose');
 
-const reviewsSchema = new mongoose.Schema({
+const restaurantSchema = new mongoose.Schema({
   id: Number,
   restaurant_name: String,
-  check_in: Boolean,
-  date: String,
-  stars: Number,
-  language: String,
-  review: String,
-  votes: {
-    useful: Boolean,
-    funny: Boolean,
-    cool: Boolean,
-  },
-  photos: [],
-  owner_fb: {
-    feedback: Boolean,
-    name: String,
-    title: String,
-    self_pic: String,
-    date: String,
-    review: String,
-  },
-  user: {
-    name: String,
-    self_pic: String,
-    location: String,
-    friend_count: Number,
-    review_count: [],
-    photo_count: Number,
-    elite_status: Boolean,
-  },
+  review: [
+    {
+      date: String,
+      check_in: Boolean,
+      stars: Number,
+      language: String,
+      review: String,
+      useful: Number,
+      funny: Number,
+      cool: Number,
+      user: [
+        {
+          name: String,
+          self_pic: String,
+          location: String,
+          friend_count: Number,
+          review_count: Number,
+          photo_count: Number,
+          elite_status: Boolean,
+        },
+      ],
+      ownerFb: [
+        {
+          name: String,
+          self_pic: String,
+          title: String,
+          date: String,
+          review: String,
+        },
+      ],
+    },
+  ],
+
+
 });
 
 module.exports = {
-  Reviews: mongoose.model('reviews', reviewsSchema),
+  Reviews: mongoose.model('restaurant', restaurantSchema),
 };

@@ -12,7 +12,8 @@
     "new:start": "npm run seed && npm start",
     "build": "webpack",
     "seed": "node models/reviews.js",
-    "seed-sql": "node models/seed.SQL.js"
+    "seed-sql": "node models/seed.SQL.js",
+    "seed-nosql": "node models/seed.noSQL.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "express": "^4.16.4",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.11",
+    "faker": "^4.1.0",
     "mongoose": "^5.4.15",
     "pg": "^7.8.2",
     "pg-hstore": "^2.3.2",
