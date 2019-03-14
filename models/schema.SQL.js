@@ -37,43 +37,35 @@ const Review = sequelize.define('reviews', {
   },
   check_in: {
     type: Sequelize.BOOLEAN,
-    allowNull: false,
+    allowNull: true,
   },
   date: {
     type: Sequelize.DATEONLY,
-    allowNull: false,
+    allowNull: true,
   },
   review: {
     type: Sequelize.STRING(1234),
-    allowNull: false,
+    allowNull: true,
   },
   star: {
     type: Sequelize.INTEGER,
-    allowNull: false,
-  },
-  owner_fb: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false,
-  },
-  owner_fb_id: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
+    allowNull: true,
   },
   language: {
     type: Sequelize.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   vote_useful: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false,
+    type: Sequelize.INTEGER,
+    allowNull: true,
   },
   vote_funny: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false,
+    type: Sequelize.INTEGER,
+    allowNull: true,
   },
   vote_cool: {
-    type: Sequelize.BOOLEAN,
-    allowNull: false,
+    type: Sequelize.INTEGER,
+    allowNull: true,
   },
 
 }, { timestamps: false }, { freezeTableName: true });
@@ -125,6 +117,10 @@ const Owner = sequelize.define('owners', {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  self_pic: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   title: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -138,20 +134,11 @@ const Owner = sequelize.define('owners', {
   },
 }, { timestamps: false }, { freezeTableName: true });
 
-const Photo = sequelize.define('photos', {
-  id: {
-    type: Sequelize.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-    allowNull: false,
-  },
-  photos: {
-    type: Sequelize.ARRAY(Sequelize.TEXT),
-  },
-}, { timestamps: false }, { freezeTableName: true });
-
-Restaurant.hasMany(Review);
-Review.belongsTo(Restaurant, { constraints: false });
+Restaurant.hasMany(Review, { constraints: false });
+Review.hasOne(User, { constraints: false });
+Owner.hasMany(Review, { constraints: false });
+// Review.belongsTo(Restaurant);
+// Review.belongsTo(User);
 
 module.exports = {
   sequelize,
@@ -159,5 +146,4 @@ module.exports = {
   Review,
   User,
   Owner,
-  Photo,
 };
